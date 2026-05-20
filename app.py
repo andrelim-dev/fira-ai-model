@@ -92,16 +92,23 @@ def investment_recommendation():
 
             Candidate Stocks: {json.dumps(filtered_stocks)}
 
+            Rules for Reasoning:
+            - Each stock MUST have a completely different reasoning approach
+            - Do NOT reuse sentence patterns
+            - Do NOT repeat phrases like "high-risk high-growth"
+            - Each reason must focus on different financial logic
+            - Do NOT mention about user's profile (like investment goal, preferred sectors, investment experience, and risk profile) in the reasoning, focus on financial logic instead
+
             Return ONLY valid JSON.
 
-            Rules:
+            Rules for Response Format:
             - Do not include markdown
             - Do not include explanation outside JSON
             - Use double quotes only
             - Return valid JSON array
             - Do not write ```json
 
-            Response Format:
+            Response Format (Must Follow This Format Exactly):
             [
                 {{
                     "stock_code": "",
@@ -121,7 +128,7 @@ def investment_recommendation():
                 }
             ],
             'model': 'Qwen/Qwen2.5-3B-Instruct:featherless-ai',
-            'max_tokens': 300,
+            'max_tokens': 400,
             'temperature': 0.3,
         }
 
@@ -155,6 +162,7 @@ def investment_recommendation():
         recommendations = json.loads(clean_json)
 
         return jsonify(recommendations)
+        # return jsonify(result['choices'][0]['message']['content'])
     
     except requests.exceptions.Timeout:
         return jsonify({

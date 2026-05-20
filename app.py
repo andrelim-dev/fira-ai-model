@@ -161,8 +161,10 @@ def investment_recommendation():
 
         recommendations = json.loads(clean_json)
 
-        return jsonify(recommendations)
-        # return jsonify(result['choices'][0]['message']['content'])
+        return jsonify({
+            'risk_profile': risk_profile,
+            'recommendations': recommendations
+        })
     
     except requests.exceptions.Timeout:
         return jsonify({

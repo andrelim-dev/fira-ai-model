@@ -21,7 +21,7 @@ stocks = [
         'stock_code': 'BBNI',
         'sector': 'Banking',
         'risk_level': 'Medium',
-        'potential': 'Turnaround Growth'
+        'potential': 'Dividend Growth'
     },
     {
         'stock_code': 'BNGA',
@@ -29,7 +29,6 @@ stocks = [
         'risk_level': 'Medium',
         'potential': 'Dividend Stability'
     },
-
     {
         'stock_code': 'GOTO',
         'sector': 'Technology',
@@ -60,7 +59,6 @@ stocks = [
         'risk_level': 'Medium',
         'potential': 'Enterprise Growth'
     },
-
     {
         'stock_code': 'KLBF',
         'sector': 'Healthcare',
@@ -91,7 +89,6 @@ stocks = [
         'risk_level': 'Medium',
         'potential': 'Stable Expansion'
     },
-
     {
         'stock_code': 'ADRO',
         'sector': 'Energy',
@@ -122,7 +119,6 @@ stocks = [
         'risk_level': 'Medium',
         'potential': 'Energy Recovery'
     },
-
     {
         'stock_code': 'UNVR',
         'sector': 'Consumer Goods',
@@ -153,7 +149,6 @@ stocks = [
         'risk_level': 'Medium',
         'potential': 'Consumption Growth'
     },
-
     {
         'stock_code': 'BSDE',
         'sector': 'Property',
@@ -184,7 +179,6 @@ stocks = [
         'risk_level': 'Low',
         'potential': 'Industrial Estate Growth'
     },
-
     {
         'stock_code': 'TLKM',
         'sector': 'Telecommunication',
@@ -215,7 +209,6 @@ stocks = [
         'risk_level': 'Low',
         'potential': 'Recurring Revenue Growth'
     },
-
     {
         'stock_code': 'ASII',
         'sector': 'Industrial',

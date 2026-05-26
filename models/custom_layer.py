@@ -29,7 +29,6 @@ class CustomDenseLayer(tf.keras.layers.Layer):
 
     def call(self, inputs):
         output = tf.matmul(inputs, self.w) + self.b
-        
 
         if self.activation is not None:
             output = self.activation(output)

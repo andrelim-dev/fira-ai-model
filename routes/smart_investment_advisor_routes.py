@@ -9,12 +9,9 @@ def investment_recommendation():
     try:
         data = request.get_json()
 
-        risk_profile, recommendations = generate_investment_recommendation(data)
+        result = generate_investment_recommendation(data)
 
-        return jsonify({
-            'risk_profile': risk_profile,
-            'recommendations': recommendations
-        })
+        return jsonify(result)
     
     except Exception as e:
         return jsonify({

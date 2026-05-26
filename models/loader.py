@@ -7,7 +7,8 @@ from models.custom_loss import CustomSparseCategoricalCrossentropy
 smart_spending_insight_model = tf.keras.models.load_model(
     'model/smart_spending_insight/smart_spending_insight_dl_model.keras',
     custom_objects={
-        'CustomDenseLayer': CustomDenseLayer
+        'CustomDenseLayer': CustomDenseLayer,
+        'CustomSparseCategoricalCrossentropy': CustomSparseCategoricalCrossentropy
     }
 )
 
